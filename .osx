@@ -35,3 +35,13 @@ defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
 # Setting trackpad & mouse speed to a desired number
 defaults write -g com.apple.trackpad.scaling 2
+
+# Auto hide dock
+defaults write com.apple.dock autohide -bool true
+defaults write com.apple.dock autohide-delay -float "0.2"
+killall Dock
+
+
+
+
+
